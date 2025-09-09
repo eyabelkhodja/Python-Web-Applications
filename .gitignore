@@ -1,0 +1,28 @@
+# PyCharm/IntelliJ IDE files
+.idea/
+*.iml
+.idea_modules/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller builds
+build/
+dist/
+*.spec
+
+# Virtual environments
+.venv/
+env/
+
+# Other Python artifacts
+*.egg-info/
+.pytest_cache/
+coverage.xml
+htmlcov/
+
+# OS generated files
+.DS_Store
+Thumbs.db
