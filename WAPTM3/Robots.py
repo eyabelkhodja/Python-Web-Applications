@@ -27,7 +27,7 @@ class ParsingRobots:
             return None
 
 
-    def getComments(self, text):
+    def getDisallowed(self, text):
         if not text:
             return
 
@@ -44,7 +44,7 @@ def main():
     url = input("Enter URL (e.g., https://example.com): ").strip()
     text = p.parsing(url)
     if text:
-        p.getComments(text)
+        p.getDisallowed(text)
 
 if __name__ == '__main__':
     main()
