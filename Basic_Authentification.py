@@ -21,22 +21,3 @@ class BasicAuthentification():
         session.auth=(username,password)
         return session
 
-def main ():
-    url = input ("Enter the URL: ")
-    basic_auth= BasicAuthentification()
-    if basic_auth.check_basic_auth(url):
-        print ("Uses Basic Authentification")
-        username = input ("Enter the username: ")
-        password = input("Enter the password: ")
-        s = basic_auth.self_authenticate(username,password)
-        response = s.get(url)
-        if response.ok:
-            print("Successful authentification")
-        else:
-            print("Failed authentification")
-    else:
-        print ("Does not use Basic Authentification")
-
-if __name__ == '__main__':
-
-        main()
